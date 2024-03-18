@@ -1,9 +1,6 @@
 import mongooes from 'mongoose';
 import express from 'express';
 const app = express();
-app.get('/', (req, resp) => [
-    resp.send('This is it')
-]);
 app.use(cors({
     origin: [""],
     methods: ["POST", "GET"],
